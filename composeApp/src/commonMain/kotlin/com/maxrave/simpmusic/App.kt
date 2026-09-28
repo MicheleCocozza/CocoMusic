@@ -363,14 +363,7 @@ fun App(
         }
     }
 
-    LaunchedEffect(updateData) {
-        val response = updateData ?: return@LaunchedEffect
-        if (viewModel.showedUpdateDialog &&
-            response.tagName != getString(Res.string.version_format, VersionManager.getVersionName())
-        ) {
-            shouldShowUpdateDialog = true
-        }
-    }
+    // update dialog disabled for CocoMusic
 
     val navBackStackEntry by navController.currentBackStackEntryAsState()
     LaunchedEffect(navBackStackEntry) {
