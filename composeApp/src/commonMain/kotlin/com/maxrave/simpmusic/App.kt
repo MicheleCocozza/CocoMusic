@@ -486,7 +486,7 @@ fun App(
                                     onOpenNowPlaying = { isShowNowPlaylistScreen = true },
                                     isScrolledToTop = isScrolledToTop,
                                     showAnalyticsTab = showAnalyticsTab,
-                                    showMixForYouTab = showMixForYouTab,
+                                    showMixForYouTab = false,
                                 ) { klass ->
                                     viewModel.reloadDestination(klass)
                                 }
@@ -494,7 +494,7 @@ fun App(
                                 AppBottomNavigationBar(
                                     navController = navController,
                                     showAnalyticsTab = showAnalyticsTab,
-                                    showMixForYouTab = showMixForYouTab,
+                                    showMixForYouTab = false,
                                 ) { klass ->
                                     viewModel.reloadDestination(klass)
                                 }
@@ -522,7 +522,7 @@ fun App(
                             AppNavigationRail(
                                 navController = navController,
                                 showAnalyticsTab = showAnalyticsTab,
-                                showMixForYouTab = showMixForYouTab,
+                                showMixForYouTab = false,
                             ) { klass ->
                                 viewModel.reloadDestination(klass)
                             }
