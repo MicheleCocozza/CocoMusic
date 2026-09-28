@@ -83,6 +83,18 @@ android {
         }
     }
 
+    signingConfigs {
+        val ksPath = System.getenv("KEYSTORE_PATH")
+        if (ksPath != null) {
+            create("cocoDebug") {
+                storeFile = file(ksPath)
+                storePassword = System.getenv("STORE_PASSWORD") ?: "cocomusic"
+                keyAlias = System.getenv("KEY_ALIAS") ?: "cocomusic"
+                keyPassword = System.getenv("KEY_PASSWORD") ?: "cocomusic"
+            }
+        }
+    }
+
     buildTypes {
         release {
             isMinifyEnabled = true
@@ -104,6 +116,10 @@ android {
             isMinifyEnabled = false
             applicationIdSuffix = ".dev"
             versionNameSuffix = "-dev"
+            val cocoDebugConfig = runCatching { signingConfigs.getByName("cocoDebug") }.getOrNull()
+            if (cocoDebugConfig != null) {
+                signingConfig = cocoDebugConfig
+            }
         }
     }
     compileOptions {
