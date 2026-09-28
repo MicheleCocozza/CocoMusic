@@ -38,6 +38,8 @@ class RssFeedNotifyWork(
 
     override suspend fun doWork(): Result =
         withContext(Dispatchers.IO) {
+            // Disabled for CocoMusic - will be repurposed for CocoMusic release notifications
+            return@withContext Result.success()
             try {
                 Logger.w(TAG, "doWork: fetching $FEED_URL")
                 val items = parseRss(fetchFeed(FEED_URL))
