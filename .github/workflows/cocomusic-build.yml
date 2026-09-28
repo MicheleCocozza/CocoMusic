@@ -40,6 +40,36 @@ jobs:
       - name: Grant execute permission to gradlew
         run: chmod +x gradlew
 
+      - name: Setup stable signing keystore
+        run: |
+          KEYSTORE_B64_FILE="android/cocomusic-debug.keystore.b64"
+          KEYSTORE_FILE="/tmp/cocomusic-debug.keystore"
+          mkdir -p android
+          if [ -f "$KEYSTORE_B64_FILE" ]; then
+            echo "Restoring existing keystore"
+            base64 -d "$KEYSTORE_B64_FILE" > "$KEYSTORE_FILE"
+          else
+            echo "Generating new stable signing keystore"
+            keytool -genkeypair -v \
+              -keystore "$KEYSTORE_FILE" \
+              -keyalg RSA -keysize 2048 \
+              -validity 36500 \
+              -alias cocomusic \
+              -storepass cocomusic \
+              -keypass cocomusic \
+              -dname "CN=CocoMusic, OU=Dev, O=CocoMusic, L=IT, ST=IT, C=IT"
+            base64 -w 0 "$KEYSTORE_FILE" > "$KEYSTORE_B64_FILE"
+            git config user.email "actions@github.com"
+            git config user.name "GitHub Actions"
+            git add "$KEYSTORE_B64_FILE"
+            git commit -m "ci: add stable debug signing keystore for consistent installs"
+            git push
+          fi
+          echo "KEYSTORE_PATH=$KEYSTORE_FILE" >> $GITHUB_ENV
+          echo "KEY_ALIAS=cocomusic" >> $GITHUB_ENV
+          echo "KEY_PASSWORD=cocomusic" >> $GITHUB_ENV
+          echo "STORE_PASSWORD=cocomusic" >> $GITHUB_ENV
+
       - name: Build debug APK
         run: ./gradlew :androidApp:assembleDebug --no-daemon
 
