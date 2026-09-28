@@ -525,12 +525,7 @@ fun HomeScreen(
                                         )
                                         Spacer(Modifier.height(8.dp))
                                     }
-                                    if (item.title != stringResource(Res.string.quick_picks)) {
-                                        HomeItem(
-                                            navController = navController,
-                                            data = item,
-                                        )
-                                    }
+
                                 }
                             }
                         }
@@ -548,22 +543,20 @@ fun HomeScreen(
                                 )
                             }
                         }
-                        if (homeListState == ListState.PAGINATION_EXHAUST) {
-                            item {
-                                AnimatedVisibility(
-                                    visible = moodMomentAndGenre != null,
+                        item {
+                            AnimatedVisibility(
+                                visible = moodMomentAndGenre != null,
+                            ) {
+                                Box(
+                                    modifier =
+                                        Modifier
+                                            .padding(horizontal = 15.dp),
                                 ) {
-                                    Box(
-                                        modifier =
-                                            Modifier
-                                                .padding(horizontal = 15.dp),
-                                    ) {
-                                        moodMomentAndGenre?.let {
-                                            MoodMomentAndGenre(
-                                                mood = it,
-                                                navController = navController,
-                                            )
-                                        }
+                                    moodMomentAndGenre?.let {
+                                        MoodMomentAndGenre(
+                                            mood = it,
+                                            navController = navController,
+                                        )
                                     }
                                 }
                             }
@@ -628,50 +621,7 @@ fun HomeScreen(
                                 ),
                     )
                 }
-                Row(
-                    modifier =
-                        Modifier
-                            .horizontalScroll(chipRowState)
-                            .padding(vertical = 8.dp, horizontal = 15.dp)
-                            .background(Color.Transparent),
-                    horizontalArrangement = Arrangement.spacedBy(4.dp),
-                ) {
-                    listOfHomeChip.forEach { id ->
-                        val isSelected =
-                            when (params) {
-                                HOME_PARAMS_RELAX -> id == Res.string.relax
-                                HOME_PARAMS_SLEEP -> id == Res.string.sleep
-                                HOME_PARAMS_ENERGIZE -> id == Res.string.energize
-                                HOME_PARAMS_SAD -> id == Res.string.sad
-                                HOME_PARAMS_ROMANCE -> id == Res.string.romance
-                                HOME_PARAMS_FEEL_GOOD -> id == Res.string.feel_good
-                                HOME_PARAMS_WORKOUT -> id == Res.string.workout
-                                HOME_PARAMS_PARTY -> id == Res.string.party
-                                HOME_PARAMS_COMMUTE -> id == Res.string.commute
-                                HOME_PARAMS_FOCUS -> id == Res.string.focus
-                                else -> id == Res.string.all
-                            }
-                        Chip(
-                            isAnimated = loading,
-                            isSelected = isSelected,
-                            text = stringResource(id),
-                        ) {
-                            when (id) {
-                                Res.string.all -> viewModel.setParams(null)
-                                Res.string.relax -> viewModel.setParams(HOME_PARAMS_RELAX)
-                                Res.string.sleep -> viewModel.setParams(HOME_PARAMS_SLEEP)
-                                Res.string.energize -> viewModel.setParams(HOME_PARAMS_ENERGIZE)
-                                Res.string.sad -> viewModel.setParams(HOME_PARAMS_SAD)
-                                Res.string.romance -> viewModel.setParams(HOME_PARAMS_ROMANCE)
-                                Res.string.feel_good -> viewModel.setParams(HOME_PARAMS_FEEL_GOOD)
-                                Res.string.workout -> viewModel.setParams(HOME_PARAMS_WORKOUT)
-                                Res.string.party -> viewModel.setParams(HOME_PARAMS_PARTY)
-                                Res.string.commute -> viewModel.setParams(HOME_PARAMS_COMMUTE)
-                                Res.string.focus -> viewModel.setParams(HOME_PARAMS_FOCUS)
-                            }
-                        }
-                    }
-                }
+
             }
         }
     }
