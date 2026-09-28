@@ -531,21 +531,6 @@ fun HomeScreen(
                                             data = item,
                                         )
                                     }
-                                                                            },
-                                                                    )
-                                                                },
-                                                        )
-                                                    },
-                                                navController = navController,
-                                                viewModel = viewModel,
-                                            )
-                                        }
-                                    } else {
-                                        HomeItem(
-                                            navController = navController,
-                                            data = item,
-                                        )
-                                    }
                                 }
                             }
                         }
@@ -564,22 +549,6 @@ fun HomeScreen(
                             }
                         }
                         if (homeListState == ListState.PAGINATION_EXHAUST) {
-) {
-                                AnimatedVisibility(
-                                    visible = newRelease.isNotEmpty(),
-                                ) {
-                                    Box(
-                                        modifier =
-                                            Modifier
-                                                .padding(horizontal = 15.dp),
-                                    ) {
-                                        HomeItem(
-                                            navController = navController,
-                                            data = it,
-                                        )
-                                    }
-                                }
-                            }
                             item {
                                 AnimatedVisibility(
                                     visible = moodMomentAndGenre != null,
