@@ -85,34 +85,46 @@ fun parseThemeColorHex(hex: String): Color? {
 }
 
 /**
- * Neutral surfaces for the light theme, on a pure neutral-grey ramp (R=G=B, no seed tint);
- * primary/secondary/tertiary stay seed-derived. The page background is #FAFAFA (neutral tone 98,
- * the Material 3 stance) rather than pure white: a full-bleed #FFFFFF expanse glares on a large
- * desktop window, and even Apple — who pins systemBackground to white — puts #F2F2F7 behind
- * list pages. Pure white is kept for surfaceBright/surfaceContainerLowest so cards and sheets
- * still have a brighter-than-page tier to lift onto. Dark stays pure-black AMOLED: black does
- * not glare and saves OLED.
+ * Pastello-orange surfaces for the light theme.
+ *
+ * The background moves from the old neutral-grey ramp to a warm arancio pastello (#FFF3E0)
+ * that is easy on the eyes without being garish. Because the background is now orange, the
+ * seed-derived primary (bright orange #FF6D00) would be almost invisible against it — so
+ * primary is pinned to a darker, more saturated amber (#BF5B00) that still reads as orange
+ * but contrasts clearly on the pastello ground. Text uses warm browns (#3E2723 / #6D4C41)
+ * rather than pure black/grey so the whole palette stays tonally coherent.
+ *
+ * Dark stays pure-black AMOLED (no change): black does not glare and saves OLED.
  */
-private fun ColorScheme.withNeutralLightSurfaces(): ColorScheme =
+private fun ColorScheme.withPastelloLightSurfaces(): ColorScheme =
     copy(
-        background = Color(0xFFFAFAFA),
-        onBackground = Color(0xFF1B1B1B),
-        surface = Color(0xFFFAFAFA),
-        onSurface = Color(0xFF1B1B1B),
-        surfaceVariant = Color(0xFFE2E2E2),
-        onSurfaceVariant = Color(0xFF474747),
-        surfaceTint = primary,
-        surfaceBright = Color(0xFFFFFFFF),
-        surfaceDim = Color(0xFFDADADA),
-        surfaceContainerLowest = Color(0xFFFFFFFF),
-        surfaceContainerLow = Color(0xFFF7F7F7),
-        surfaceContainer = Color(0xFFF1F1F1),
-        surfaceContainerHigh = Color(0xFFECECEC),
-        surfaceContainerHighest = Color(0xFFE6E6E6),
-        outline = Color(0xFF777777),
-        outlineVariant = Color(0xFFC7C7C7),
-        inverseSurface = Color(0xFF303030),
-        inverseOnSurface = Color(0xFFF1F1F1),
+        // Backgrounds — arancio pastello riposante
+        background = Color(0xFFFFF3E0),
+        onBackground = Color(0xFF3E2723),
+        surface = Color(0xFFFFF3E0),
+        onSurface = Color(0xFF3E2723),
+        // Surface variants — gradazione arancio leggermente più saturata
+        surfaceVariant = Color(0xFFFFE0B2),
+        onSurfaceVariant = Color(0xFF6D4C41),
+        surfaceTint = Color(0xFFBF5B00),
+        surfaceBright = Color(0xFFFFF8F0),
+        surfaceDim = Color(0xFFFFCC80),
+        surfaceContainerLowest = Color(0xFFFFFBF5),
+        surfaceContainerLow = Color(0xFFFFF8F0),
+        surfaceContainer = Color(0xFFFFF3E0),
+        surfaceContainerHigh = Color(0xFFFFEDD0),
+        surfaceContainerHighest = Color(0xFFFFE0B2),
+        // Outline — ambrato caldo
+        outline = Color(0xFFBF8060),
+        outlineVariant = Color(0xFFFFCC80),
+        // Inverse (drawer/snackbar) — marrone scuro su arancio
+        inverseSurface = Color(0xFF3E2723),
+        inverseOnSurface = Color(0xFFFFF3E0),
+        // Primary — arancio scuro per bottoni e accent: contrasta chiaramente sul pastello
+        primary = Color(0xFFBF5B00),
+        onPrimary = Color(0xFFFFFFFF),
+        primaryContainer = Color(0xFFFFCC80),
+        onPrimaryContainer = Color(0xFF3E2723),
     )
 
 @OptIn(ExperimentalMaterial3ExpressiveApi::class, ExperimentalMaterial3Api::class)
@@ -148,7 +160,7 @@ fun AppTheme(
                 isDark = isDark,
                 isAmoled = isDark,
                 style = PaletteStyle.TonalSpot,
-                modifyColorScheme = { cs -> if (isDark) cs else cs.withNeutralLightSurfaces() },
+                modifyColorScheme = { cs -> if (isDark) cs else cs.withPastelloLightSurfaces() },
             )
     // Immersive screens stay dark even at light theme (see [ForceDarkContent]). Resolve their scheme
     // once here instead of letting every such subtree build a palette of its own.
