@@ -1,30 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    CocoMusic launcher icon foreground.
+    Design: pumpkin (zucca) with a musical note.
+    "Coco" derives from "cocozza" = zucca in Neapolitan dialect.
+    White on transparent background; orange background is the separate layer.
+    Content stays within the 72x72 safe zone (18px margin on each side of 108x108 viewport).
+-->
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:aapt="http://schemas.android.com/aapt"
     android:width="108dp"
     android:height="108dp"
     android:viewportWidth="108"
     android:viewportHeight="108">
-    <path android:pathData="M31,63.928c0,0 6.4,-11 12.1,-13.1c7.2,-2.6 26,-1.4 26,-1.4l38.1,38.1L107,108.928l-32,-1L31,63.928z">
-        <aapt:attr name="android:fillColor">
-            <gradient
-                android:endX="85.84757"
-                android:endY="92.4963"
-                android:startX="42.9492"
-                android:startY="49.59793"
-                android:type="linear">
-                <item
-                    android:color="#44000000"
-                    android:offset="0.0" />
-                <item
-                    android:color="#00000000"
-                    android:offset="1.0" />
-            </gradient>
-        </aapt:attr>
-    </path>
+
+    <!-- ===== PUMPKIN ===== -->
+
+    <!-- Stem: narrow rounded rectangle above the body -->
     <path
         android:fillColor="#FFFFFF"
-        android:fillType="nonZero"
-        android:pathData="M65.3,45.828l3.8,-6.6c0.2,-0.4 0.1,-0.9 -0.3,-1.1c-0.4,-0.2 -0.9,-0.1 -1.1,0.3l-3.9,6.7c-6.3,-2.8 -13.4,-2.8 -19.7,0l-3.9,-6.7c-0.2,-0.4 -0.7,-0.5 -1.1,-0.3C38.8,38.328 38.7,38.828 38.9,39.228l3.8,6.6C36.2,49.428 31.7,56.028 31,63.928h46C76.3,56.028 71.8,49.428 65.3,45.828zM43.4,57.328c-0.8,0 -1.5,-0.5 -1.8,-1.2c-0.3,-0.7 -0.1,-1.5 0.4,-2.1c0.5,-0.5 1.4,-0.7 2.1,-0.4c0.7,0.3 1.2,1 1.2,1.8C45.3,56.528 44.5,57.328 43.4,57.328L43.4,57.328zM64.6,57.328c-0.8,0 -1.5,-0.5 -1.8,-1.2s-0.1,-1.5 0.4,-2.1c0.5,-0.5 1.4,-0.7 2.1,-0.4c0.7,0.3 1.2,1 1.2,1.8C66.5,56.528 65.6,57.328 64.6,57.328L64.6,57.328z"
-        android:strokeWidth="1"
-        android:strokeColor="#00000000" />
+        android:pathData="M51,28 C51,24 57,24 57,28 L57,44 L51,44 Z" />
+
+    <!-- Leaf / tendril: small teardrop shape to the right of the stem -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M57,35 C62,27 75,29 74,37 C73,44 63,41 57,35 Z" />
+
+    <!-- Pumpkin body: wide oval, slightly taller on sides than center top/bottom -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,44 C69,44 83,52 83,64 C83,77 69,86 54,86 C39,86 25,77 25,64 C25,52 39,44 54,44 Z" />
+
+    <!-- Left groove: subtle vertical curve creating a pumpkin rib -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#33000000"
+        android:strokeWidth="3.5"
+        android:strokeLineCap="round"
+        android:pathData="M42,45 C36,56 36,72 42,85" />
+
+    <!-- Right groove: mirror of left groove -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#33000000"
+        android:strokeWidth="3.5"
+        android:strokeLineCap="round"
+        android:pathData="M66,45 C72,56 72,72 66,85" />
+
+    <!-- ===== MUSICAL NOTE (quaver / eighth note) ===== -->
+    <!-- Positioned in the upper-right area of the pumpkin body -->
+    <!-- Drawn in orange (#FF6D00) to be visible against the white body -->
+
+    <!-- Note head: small filled oval -->
+    <path
+        android:fillColor="#FF6D00"
+        android:pathData="M73,68 C73,73 67,76 63,73 C59,71 59,65 63,63 C67,61 73,64 73,68 Z" />
+
+    <!-- Note stem + flag: vertical line with a curved flag at the top -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FF6D00"
+        android:strokeWidth="3"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M72,68 L72,50 C79,48 84,55 76,61" />
+
 </vector>
