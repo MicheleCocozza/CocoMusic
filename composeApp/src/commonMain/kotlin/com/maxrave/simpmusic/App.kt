@@ -363,7 +363,18 @@ fun App(
         }
     }
 
-    // update dialog disabled for CocoMusic
+    LaunchedEffect(Unit) {
+        if (viewModel.shouldCheckForUpdate()) {
+            viewModel.checkForUpdate()
+        }
+    }
+
+    LaunchedEffect(updateData) {
+        if (!viewModel.showedUpdateDialog && updateData != null) {
+            shouldShowUpdateDialog = true
+            viewModel.showedUpdateDialog = true
+        }
+    }
 
     val navBackStackEntry by navController.currentBackStackEntryAsState()
     LaunchedEffect(navBackStackEntry) {
@@ -754,7 +765,7 @@ fun App(
                                 onClick = {
                                     shouldShowUpdateDialog = false
                                     viewModel.showedUpdateDialog = false
-                                    openUrl("https://simpmusic.org/download")
+                                    openUrl("https://github.com/MicheleCocozza/CocoMusic/releases/latest/download/CocoMusic-arm64-v8a.apk")
                                 },
                             ) {
                                 Text(

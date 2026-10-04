@@ -105,14 +105,14 @@ fun CreditScreen(
             fontSize = 13.sp,
         )
 
-        // Developer - clickable, opens dev blog
+        // Developer - clickable, opens GitHub profile
         Text(
             text = stringResource(Res.string.maxrave_dev),
             style = typo().bodyMedium,
             textDecoration = TextDecoration.Underline,
             modifier =
                 Modifier.clickable {
-                    openUrl("https://maxrave.dev")
+                    openUrl("https://github.com/MicheleCocozza/CocoMusic")
                 },
         )
 
@@ -135,7 +135,7 @@ fun CreditScreen(
             // Website button
             TextButton(
                 onClick = {
-                    openUrl("https://simpmusic.org")
+                    openUrl("https://github.com/MicheleCocozza/CocoMusic")
                 },
                 modifier =
                     Modifier
@@ -149,7 +149,7 @@ fun CreditScreen(
             // Developer blog button
             TextButton(
                 onClick = {
-                    openUrl("https://maxrave.dev")
+                    openUrl("https://github.com/MicheleCocozza/CocoMusic")
                 },
                 modifier =
                     Modifier
@@ -169,7 +169,7 @@ fun CreditScreen(
             // GitHub button
             TextButton(
                 onClick = {
-                    openUrl("https://github.com/maxrave-dev/SimpMusic")
+                    openUrl("https://github.com/MicheleCocozza/CocoMusic")
                 },
                 modifier =
                     Modifier
@@ -183,7 +183,7 @@ fun CreditScreen(
             // Issue tracker button
             TextButton(
                 onClick = {
-                    openUrl("https://github.com/maxrave-dev/SimpMusic/issues")
+                    openUrl("https://github.com/MicheleCocozza/CocoMusic/issues")
                 },
                 modifier =
                     Modifier
@@ -197,7 +197,7 @@ fun CreditScreen(
             // Buy me a coffee button
             TextButton(
                 onClick = {
-                    openUrl("https://github.com/sponsors/maxrave-dev")
+                    openUrl("https://github.com/MicheleCocozza")
                 },
                 modifier =
                     Modifier
@@ -237,7 +237,7 @@ fun CreditScreen(
 
         // Copyright text
         Text(
-            text = stringResource(Res.string.copyright, now().year.toString()),
+            text = stringResource(Res.string.copyright),
             style = typo().bodySmall,
             modifier =
                 Modifier

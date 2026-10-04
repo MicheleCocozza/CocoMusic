@@ -1077,8 +1077,11 @@ class SharedViewModel(
                     val data = response.data
                     when (response) {
                         is Resource.Success if (data != null) -> {
-                            _updateResponse.value = data
-                            showedUpdateDialog = true
+                            val latestVersion = data.tagName.removePrefix("v").trim()
+                            if (latestVersion != VersionManager.getVersionName()) {
+                                _updateResponse.value = data
+                                showedUpdateDialog = true
+                            }
                         }
 
                         else -> {
@@ -1092,8 +1095,11 @@ class SharedViewModel(
                     val data = response.data
                     when (response) {
                         is Resource.Success if (data != null) -> {
-                            _updateResponse.value = data
-                            showedUpdateDialog = true
+                            val latestVersion = data.tagName.removePrefix("v").trim()
+                            if (latestVersion != VersionManager.getVersionName()) {
+                                _updateResponse.value = data
+                                showedUpdateDialog = true
+                            }
                         }
 
                         else -> {

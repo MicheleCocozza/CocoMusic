@@ -68,14 +68,21 @@ jobs:
           path: dist/*.apk
           retention-days: 30
 
+      - name: Get version
+        id: version
+        run: |
+          VERSION=$(grep '^version-name' gradle/libs.versions.toml | grep -oP '"[^"]+"' | tr -d '"')
+          echo "tag=v$VERSION" >> $GITHUB_OUTPUT
+          echo "name=$VERSION" >> $GITHUB_OUTPUT
+
       - name: Update GitHub Release
         uses: softprops/action-gh-release@v2
         with:
-          tag_name: latest-debug
-          name: CocoMusic - Latest Debug Build
+          tag_name: ${{ steps.version.outputs.tag }}
+          name: CocoMusic ${{ steps.version.outputs.tag }}
           body: |
-            Build automatico dal branch dev.
+            Build automatico dal branch dev — CocoMusic ${{ steps.version.outputs.tag }}.
             Installa CocoMusic-arm64-v8a.apk su telefoni Android moderni (2016+).
-          prerelease: true
+          prerelease: false
           files: dist/*.apk
-          make_latest: false
+          make_latest: true
