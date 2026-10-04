@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="Song_and_artist_name">गाना • %1$s</string>
     <string name="playlist_and_author">प्लेलिस्ट • %1$s</string>
@@ -437,8 +437,8 @@
     <string name="use_anonymous">अनाम नाम से योगदान करें</string>
     <string name="contributor_name">योगदानकर्ता नाम</string>
     <string name="anonymous">अनाम</string>
-    <string name="simpmusic_lyrics">गीत SimpMusic Lyrics द्वारा प्रदान किए गए</string>
-    <string name="lyrics_provider_simpmusic">गीत के बोल सिम्पम्यूज़िक लिरिक्स द्वारा प्रदान किए गए</string>
+    <string name="CocoMusic_lyrics">CocoMusic Lyrics</string>
+    <string name="lyrics_provider_CocoMusic">गीत के बोल सिम्पम्यूज़िक लिरिक्स द्वारा प्रदान किए गए</string>
     <string name="backup_in_progress">बैकप चल रहा है</string>
     <string name="restore_in_progress">पुनर्स्थापना प्रगति पर है</string>
     <string name="backup_downloaded">डाउनलोड किए गए डेटा का बैकअप लें</string>

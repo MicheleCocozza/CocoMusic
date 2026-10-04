@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="Song_and_artist_name">Song • %1$s</string>
     <string name="playlist_and_author">Playlist • %1$s</string>
@@ -133,7 +133,7 @@
     <string name="developer_blog">Developer Blog</string>
     <string name="developer_blog_tagline">Read dev notes, tutorials &amp; behind-the-scenes</string>
     <string name="blog_promo_title">Something new from the dev</string>
-    <string name="blog_promo_message">I just launched my personal blog at maxrave.dev — sharing the story behind CocoMusic, music-tech deep dives, and engineering notes. Give it a read if you're curious ✨</string>
+    <string name="blog_promo_message">CocoMusic is available on GitHub — developed by MicCoc78 with love for music</string>
     <string name="visit_blog">Visit blog</string>
     <string name="paypal">PayPal</string>
     <string name="title">Title</string>
@@ -292,7 +292,7 @@
     <string name="older_first">Older First</string>
     <string name="newer_first">Newer First</string>
     <string name="added_date">Added date</string>
-    <string name="credit_app">A simple music app using YouTube Music for backend \n\nCocoMusic is an open source project to stream music from YouTube and YouTube Music without ads and tracking. CocoMusic provides many features:\n\n - Streaming music \n - Synced lyrics\n - Personalize data\n - etc… \n\nCocoMusic is always free and no ads\n\nBuild with ❤️ from Tuan Minh Nguyen Duc (maxrave-dev)</string>
+    <string name="credit_app">A simple music app using YouTube Music for backend \n\nCocoMusic is an open source project to stream music from YouTube and YouTube Music without ads and tracking. CocoMusic provides many features:\n\n - Streaming music \n - Synced lyrics\n - Personalize data\n - etc… \n\nCocoMusic is always free and no ads\n\nBuild with ❤️ from Tuan Minh Nguyen Duc (MicCoc78)</string>
     <string name="issue_tracker">Issue Tracker</string>
     <string name="copyright" translatable="false">©2026 CocoMusic - MicCoc78</string>
     <string name="featured_playlists">Featured Playlists</string>
@@ -732,13 +732,13 @@
     <string name="not_available_while_casting">Not available while casting</string>
     <string name="import_data">Import playlists</string>
     <string name="import_playlists_from_other_apps">Import playlists from another app</string>
-    <string name="import_data_intro">Import brings in playlists converted from Spotify or another YT Music client app.\nConverting tool: https://www.simpmusic.org/tools\nIn CocoMusic, only playlist files in our own format can be imported</string>
+    <string name="import_data_intro">Import brings in playlists converted from Spotify or another YT Music client app.\nConverting tool: https://github.com/MicheleCocozza/CocoMusic\nIn CocoMusic, only playlist files in our own format can be imported</string>
     <string name="import_reading_file">Reading file…</string>
     <string name="import_progress_songs">%1$d of %2$d songs</string>
     <string name="import_result">Created %1$d playlists and imported %2$d songs.</string>
     <string name="import_result_skipped">%1$d entries were skipped because their song was missing from the file.</string>
     <string name="import_failed">Import failed</string>
-    <string name="import_invalid_file">This file is not a valid CocoMusic import file. Convert your library at simpmusic.org first.</string>
+    <string name="import_invalid_file">This file is not a valid CocoMusic import file. Check the CocoMusic GitHub for import tools.</string>
     <string name="analytics">Analytics</string>
     <string name="select_all">Select all</string>
     <string name="n_selected">%1$d selected</string>
