@@ -17,6 +17,7 @@ import com.maxrave.simpmusic.utils.VersionManager
 import org.jetbrains.compose.resources.stringResource
 import simpmusic.composeapp.generated.resources.Res
 import simpmusic.composeapp.generated.resources.app_name
+import simpmusic.composeapp.generated.resources.maxrave_dev
 import simpmusic.composeapp.generated.resources.version_format
 
 @Composable
@@ -30,11 +31,11 @@ fun EndOfPage(withoutCredit: Boolean = false) {
     ) {
         if (!withoutCredit) {
             Text(
-                "@${now().year} " + stringResource(Res.string.app_name) + " " +
+                "©${now().year} " + stringResource(Res.string.app_name) + " " +
                     stringResource(
                         Res.string.version_format,
                         VersionManager.getVersionName(),
-                    ) + "\nmaxrave-dev",
+                    ) + "\n" + stringResource(Res.string.maxrave_dev),
                 style = typo().bodySmall,
                 textAlign = TextAlign.Center,
                 modifier =
