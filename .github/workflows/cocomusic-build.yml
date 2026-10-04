@@ -86,3 +86,4 @@ jobs:
           prerelease: false
           files: dist/*.apk
           make_latest: true
+          overwrite: true
