@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="Song_and_artist_name">Bài hát • %1$s</string>
     <string name="playlist_and_author">Danh sách phát • %1$s</string>
