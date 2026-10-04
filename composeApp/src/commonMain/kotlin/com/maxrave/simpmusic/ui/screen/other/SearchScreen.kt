@@ -289,7 +289,7 @@ fun SearchScreen(
         }
     }
 
-    LaunchedEffect(isExpanded, searchText, isFocused) {
+    LaunchedEffect(isExpanded, searchText) {
         searchUIType =
             if (searchText.isNotEmpty() && isExpanded) {
                 SearchUIType.SEARCH_SUGGESTIONS
@@ -1036,7 +1036,7 @@ fun SearchScreen(
                         }
                     },
                     expanded = false,
-                    onExpandedChange = {},
+                    onExpandedChange = { if (it) focusRequester.requestFocus() },
                     enabled = true,
                     placeholder = {
                         // Animated placeholder text
@@ -1085,7 +1085,7 @@ fun SearchScreen(
                 )
             },
             expanded = false,
-            onExpandedChange = {},
+            onExpandedChange = { if (it) focusRequester.requestFocus() },
             modifier =
                 Modifier
                     .fillMaxWidth()
