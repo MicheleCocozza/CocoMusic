@@ -63,24 +63,26 @@ jobs:
       - name: Build release APK
         run: ./gradlew androidApp:assembleRelease
 
-      - name: Check build-tools version
-        shell: bash
+      - name: Setup signing keystore
         run: |
-          BUILD_TOOL_VERSION=$(ls /usr/local/lib/android/sdk/build-tools/ | tail -n 1)
-          echo "BUILD_TOOL_VERSION=$BUILD_TOOL_VERSION" >> $GITHUB_ENV
-          echo Last build tool version is: $BUILD_TOOL_VERSION
+          base64 -d android/cocomusic-debug.keystore.b64 > /tmp/cocomusic-debug.keystore
 
-      - uses: kevin-david/zipalign-sign-android-release@v2
-        id: sign_app
-        with:
-          releaseDirectory: androidApp/build/outputs/apk/release
-          signingKeyBase64: ${{ secrets.BASE_64_SIGNING_KEY }}
-          alias: ${{ secrets.ALIAS }}
-          keyStorePassword: ${{ secrets.KEY_STORE_PASSWORD }}
-          keyPassword: ${{ secrets.KEY_PASSWORD }}
-          zipAlign: true
-        env:
-            BUILD_TOOLS_VERSION: ${{ env.BUILD_TOOL_VERSION }}
+      - name: Sign and zipalign release APK
+        run: |
+          BUILD_TOOL_VERSION=$(ls /usr/local/lib/android/sdk/build-tools/ | sort | tail -n 1)
+          echo "Using build-tools: $BUILD_TOOL_VERSION"
+          APKSIGNER="/usr/local/lib/android/sdk/build-tools/$BUILD_TOOL_VERSION/apksigner"
+          ZIPALIGN="/usr/local/lib/android/sdk/build-tools/$BUILD_TOOL_VERSION/zipalign"
+          RELEASE_DIR="androidApp/build/outputs/apk/release"
+          for APK in "$RELEASE_DIR"/*.apk; do
+            [ -f "$APK" ] || continue
+            ALIGNED="${APK%.apk}-aligned.apk"
+            SIGNED="${APK%.apk}-signed.apk"
+            "$ZIPALIGN" -v 4 "$APK" "$ALIGNED"
+            "$APKSIGNER" sign               --ks /tmp/cocomusic-debug.keystore               --ks-key-alias cocomusic               --ks-pass pass:cocomusic               --key-pass pass:cocomusic               --out "$SIGNED"               "$ALIGNED"
+            rm -f "$ALIGNED"
+            echo "Signed: $SIGNED"
+          done
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
