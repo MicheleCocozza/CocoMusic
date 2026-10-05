@@ -1080,7 +1080,6 @@ class SharedViewModel(
                             val latestVersion = data.tagName.removePrefix("v").trim()
                             if (latestVersion != VersionManager.getVersionName()) {
                                 _updateResponse.value = data
-                                showedUpdateDialog = true
                             }
                         }
 
@@ -1098,7 +1097,6 @@ class SharedViewModel(
                             val latestVersion = data.tagName.removePrefix("v").trim()
                             if (latestVersion != VersionManager.getVersionName()) {
                                 _updateResponse.value = data
-                                showedUpdateDialog = true
                             }
                         }
 
