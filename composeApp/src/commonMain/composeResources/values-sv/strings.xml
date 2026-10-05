@@ -128,7 +128,6 @@
     <string name="version">Version</string>
     <string name="github">GitHub</string>
     <string name="maxrave_dev">MicCoco78</string>
-    <string name="follow_me_on_x">Följ mig på X</string>
     <string name="buy_me_a_coffee">Bjud mig på en kaffe</string>
     <string name="developer_blog">Utvecklarblogg</string>
     <string name="developer_blog_tagline">Läs utvecklaranteckningar, guider &amp; material bakom kulisserna</string>
@@ -217,8 +216,6 @@
     <string name="skip_sponsor_part_of_video">Hoppa över sponsordelen av videon</string>
     <string name="customactivityoncrash_error_activity_error_occurred_explanation">Ett oväntat fel inträffade. Vi beklagar besväret.</string>
     <string name="customactivityoncrash_error_activity_restart_app">Starta om appen</string>
-    <string name="help_build_lyrics_database">Hjälp till att bygga upp CocoMusics låttextdatabas</string>
-    <string name="help_build_lyrics_database_description">Skicka dina sparade låttexter till CocoMusics låttextdatabas</string>
     <string name="customactivityoncrash_error_activity_close_app">Stäng appen</string>
     <string name="customactivityoncrash_error_activity_error_details">Information om felet</string>
     <string name="customactivityoncrash_error_activity_error_details_title">Information om felet</string>
@@ -559,8 +556,6 @@
     <string name="preferred_audio_language_message">Vissa videor, främst poddar, har flera ljudspår på olika språk. Ange en språkkod med två bokstäver (t.ex. vi) för att spela det ljudspåret när det finns. Lämna fältet tomt för att alltid spela originalljudet.</string>
     <string name="original_audio">Originalljud</string>
     <string name="use_anonymous">Använd ett anonymt namn när du bidrar</string>
-    <string name="contributor_name">Bidragsgivarens namn</string>
-    <string name="contributor_email">Bidragsgivarens e-postadress</string>
     <string name="anonymous">Anonym</string>
     <string name="simpmusic_lyrics">CocoMusic Lyrics</string>
     <string name="lyrics_provider_simpmusic">Låttexter tillhandahålls av CocoMusic Lyrics</string>
