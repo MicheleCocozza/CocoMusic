@@ -126,7 +126,7 @@
     <string name="developer_blog">Blog degli sviluppatori</string>
     <string name="developer_blog_tagline">Leggi le note degli sviluppatori, i tutorial e i dietro le quinte</string>
     <string name="blog_promo_title">Novità dagli sviluppatori</string>
-    <string name="blog_promo_message">CocoMusic è disponibile su GitHub — sviluppato da MicCoc78 con passione per la musica</string>
+    <string name="blog_promo_message">CocoMusic è disponibile su GitHub — sviluppato da MicCoco78 con passione per la musica</string>
     <string name="visit_blog">Visita il blog</string>
     <string name="paypal">PayPal</string>
     <string name="title">Titolo</string>
@@ -281,7 +281,7 @@
     <string name="older_first">Prima i più datati</string>
     <string name="newer_first">Prima i più recenti</string>
     <string name="added_date">Data aggiunta</string>
-    <string name="credit_app">Una semplice app musicale che utilizza YouTube Music come backend \n\nCocoMusic è un progetto open source per lo streaming di musica da YouTube e YouTube Music senza pubblicità e tracciamento. CocoMusic offre molte funzionalità:\n\n - Musica in streaming\n - Testi sincronizzati\n - Personalizza dati\n - ecc... \n\nCocoMusic è sempre gratuito e senza pubblicità\n\nCreato con ❤️ da MicCoc78</string>
+    <string name="credit_app">Una semplice app musicale che utilizza YouTube Music come backend \n\nCocoMusic è un progetto open source per lo streaming di musica da YouTube e YouTube Music senza pubblicità e tracciamento. CocoMusic offre molte funzionalità:\n\n - Musica in streaming\n - Testi sincronizzati\n - Personalizza dati\n - ecc... \n\nCocoMusic è sempre gratuito e senza pubblicità\n\nCreato con ❤️ da MicCoco78</string>
     <string name="issue_tracker">Rilevatore di problemi</string>
     <string name="featured_playlists">Playlist in primo piano</string>
     <string name="featured_inArtist">In primo piano</string>
