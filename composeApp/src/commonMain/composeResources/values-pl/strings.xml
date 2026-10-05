@@ -205,8 +205,6 @@
     <string name="skip_sponsor_part_of_video">Pomiń część filmu sponsora</string>
     <string name="customactivityoncrash_error_activity_error_occurred_explanation">Wystąpił nieoczekiwany błąd. Przepraszamy za niedogodności.</string>
     <string name="customactivityoncrash_error_activity_restart_app">Zrestartuj aplikację</string>
-    <string name="help_build_lyrics_database">Pomóż zbudować bazę tekstów piosenek CocoMusic</string>
-    <string name="help_build_lyrics_database_description">Wyślij swoje zapisane teksty do bazy danych tekstów piosenek CocoMusic</string>
     <string name="customactivityoncrash_error_activity_close_app">Zamknij aplikację</string>
     <string name="customactivityoncrash_error_activity_error_details">Opis błędu</string>
     <string name="customactivityoncrash_error_activity_error_details_title">Opis błędu</string>
@@ -456,8 +454,6 @@
     <string name="youtube_subtitle_language">Język tłumaczenia napisów YouTube</string>
     <string name="youtube_subtitle_language_message">Wpisz kod języka (Eg: en) (2 litery). Jest to preferowany język tłumaczenia napisów YouTube.</string>
     <string name="use_anonymous">Użyj anonimowej nazwy, aby wnieść wkład</string>
-    <string name="contributor_name">Nazwa kontrybutora</string>
-    <string name="contributor_email">E-mail kontrybutora</string>
     <string name="anonymous">Anonimowy</string>
     <string name="simpmusic_lyrics">Teksty CocoMusic</string>
     <string name="lyrics_provider_simpmusic">Tekst dostarczony przez Teksty CocoMusic</string>
