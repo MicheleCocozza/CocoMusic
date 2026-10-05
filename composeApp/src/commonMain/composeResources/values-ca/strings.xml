@@ -205,8 +205,6 @@
     <string name="skip_sponsor_part_of_video">Omet la part del patrocinador del vídeo</string>
     <string name="customactivityoncrash_error_activity_error_occurred_explanation">S'ha produït un error inesperat. Disculpeu les molèsties.</string>
     <string name="customactivityoncrash_error_activity_restart_app">Reinicieu l'aplicació</string>
-    <string name="help_build_lyrics_database">Ajuda a CocoMusic lyrics a omplir la base de dades de lletres de cançons</string>
-    <string name="help_build_lyrics_database_description">Envia les lletres de cançons del dispositiu a la base de dades de CocoMusic lyrics</string>
     <string name="customactivityoncrash_error_activity_close_app">Tanca l'aplicació</string>
     <string name="customactivityoncrash_error_activity_error_details">Detalls de l'error</string>
     <string name="customactivityoncrash_error_activity_error_details_title">Detalls de l'error</string>
@@ -456,8 +454,6 @@
     <string name="youtube_subtitle_language">Idioma de la traducció dels subtítols de YouTube</string>
     <string name="youtube_subtitle_language_message">Escrigui el codi d'idioma (per exemple: ca) (dues lletres). Aquest és l'idioma per a la traducció dels subtítols de YouTube preferent</string>
     <string name="use_anonymous">Utilitza un nom anònim per contribuir</string>
-    <string name="contributor_name">Nom de contribuïdor</string>
-    <string name="contributor_email">Email de contribuïdor</string>
     <string name="anonymous">Anònim</string>
     <string name="simpmusic_lyrics">CocoMusic Lyrics</string>
     <string name="lyrics_provider_simpmusic">Lletra de cançó proporcionada per CocoMusic Lyrics</string>
