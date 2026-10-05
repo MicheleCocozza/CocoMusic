@@ -127,7 +127,6 @@
     <string name="version">Phiên bản</string>
     <string name="github">Github</string>
     <string name="maxrave_dev">MicCoco78</string>
-    <string name="follow_me_on_x">Theo dõi tôi trên X</string>
     <string name="buy_me_a_coffee">Hỗ trợ tôi</string>
     <string name="developer_blog">Blog của nhà phát triển</string>
     <string name="developer_blog_tagline">Đọc các ghi chép của nhà phát triển, hướng dẫn &amp; đằng sau các tính năng</string>
@@ -216,8 +215,6 @@
     <string name="skip_sponsor_part_of_video">Bỏ qua phân đoạn được tài trợ của video</string>
     <string name="customactivityoncrash_error_activity_error_occurred_explanation">Đã xảy ra lỗi không mong muốn. Xin lỗi vì sự bất tiện.</string>
     <string name="customactivityoncrash_error_activity_restart_app">Khởi động lại ứng dụng</string>
-    <string name="help_build_lyrics_database">Giúp đỡ CocoMusic lyrics xây dựng cơ sở dữ liệu lời bài hát</string>
-    <string name="help_build_lyrics_database_description">Gửi lời bài hát đã lưu của bạn tới cơ sở dữ liệu của CocoMusic lyrics</string>
     <string name="customactivityoncrash_error_activity_close_app">Đóng ứng dụng</string>
     <string name="customactivityoncrash_error_activity_error_details">Chi tiết lỗi</string>
     <string name="customactivityoncrash_error_activity_error_details_title">Chi tiết lỗi</string>
@@ -556,8 +553,6 @@
     <string name="preferred_audio_language">Ngôn ngữ âm thanh ưu tiên</string>
     <string name="preferred_audio_language_message">Một số video, chủ yếu là podcast, đi kèm với một số bản âm thanh bằng các ngôn ngữ khác nhau. Nhập mã ngôn ngữ (Ví dụ: vi) (2 chữ cái) để phát bản nhạc đó khi có. Để trống để luôn phát âm thanh gốc.</string>
     <string name="use_anonymous">Sử dụng tên ẩn danh để đóng góp</string>
-    <string name="contributor_name">Tên người đóng góp</string>
-    <string name="contributor_email">Email người đóng góp</string>
     <string name="anonymous">Ẩn danh</string>
     <string name="simpmusic_lyrics">CocoMusic Lyrics</string>
     <string name="lyrics_provider_simpmusic">Lời bài hát được cung cấp bởi CocoMusic Lyrics</string>
