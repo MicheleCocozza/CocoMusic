@@ -205,8 +205,6 @@
     <string name="skip_sponsor_part_of_video">跳过视频赞助部分</string>
     <string name="customactivityoncrash_error_activity_error_occurred_explanation">发生意外错误。很抱歉给您带来不便。</string>
     <string name="customactivityoncrash_error_activity_restart_app">重启应用</string>
-    <string name="help_build_lyrics_database">帮助CocoMusic 歌词建立歌词数据库</string>
-    <string name="help_build_lyrics_database_description">将您保存的歌词发送到 CocoMusic 歌词数据库中</string>
     <string name="customactivityoncrash_error_activity_close_app">关闭应用</string>
     <string name="customactivityoncrash_error_activity_error_details">错误信息</string>
     <string name="customactivityoncrash_error_activity_error_details_title">错误信息</string>
@@ -464,8 +462,6 @@
     <string name="youtube_subtitle_language">YouTube 字幕翻译语言</string>
     <string name="youtube_subtitle_language_message">输入语言代码 (Eg: en) (2 letters)。这是YouTube 字幕的首选翻译语言。</string>
     <string name="use_anonymous">使用匿名名称来贡献信息</string>
-    <string name="contributor_name">贡献者名称</string>
-    <string name="contributor_email">贡献者邮箱</string>
     <string name="anonymous">匿名</string>
     <string name="simpmusic_lyrics">CocoMusic 歌词</string>
     <string name="lyrics_provider_simpmusic">歌词由 BetterLyrics 提供</string>
