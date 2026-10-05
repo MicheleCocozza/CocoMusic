@@ -210,8 +210,6 @@
     <string name="skip_sponsor_part_of_video">Skip sponsor part of video</string>
     <string name="customactivityoncrash_error_activity_error_occurred_explanation">An unexpected error occurred. Sorry for the inconvenience.</string>
     <string name="customactivityoncrash_error_activity_restart_app">Restart app</string>
-    <string name="help_build_lyrics_database">Help CocoMusic lyrics build the lyrics database</string>
-    <string name="help_build_lyrics_database_description">Send your saved lyrics to CocoMusic lyrics's database</string>
     <string name="customactivityoncrash_error_activity_close_app">Zatvori app</string>
     <string name="customactivityoncrash_error_activity_error_details">Pogreška details</string>
     <string name="customactivityoncrash_error_activity_error_details_title">Pogreška details</string>
@@ -548,8 +546,6 @@
     <string name="youtube_subtitle_language">YouTube Subtitle Translation Jezik</string>
     <string name="youtube_subtitle_language_message">Type language code (Eg: en) (2 letters). This is the preferred translation language for YouTube subtitles.</string>
     <string name="use_anonymous">Use anonymous name to contribute</string>
-    <string name="contributor_name">Contributor name</string>
-    <string name="contributor_email">Contributor email</string>
     <string name="anonymous">Anonymous</string>
     <string name="simpmusic_lyrics">CocoMusic Tekst pjesme</string>
     <string name="lyrics_provider_simpmusic">Tekst pjesme provided by CocoMusic Tekst pjesme</string>
