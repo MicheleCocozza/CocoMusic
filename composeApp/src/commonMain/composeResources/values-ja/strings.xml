@@ -210,8 +210,6 @@
     <string name="skip_sponsor_part_of_video">動画の協賛シーンなどをスキップします</string>
     <string name="customactivityoncrash_error_activity_error_occurred_explanation">予期しないエラーが発生しました。ご迷惑をおかけして申し訳ありません。</string>
     <string name="customactivityoncrash_error_activity_restart_app">アプリを再起動</string>
-    <string name="help_build_lyrics_database">CocoMusicの歌詞データベースの構築を手伝う</string>
-    <string name="help_build_lyrics_database_description">保存した歌詞をCocoMusicの歌詞データベースに送信します</string>
     <string name="customactivityoncrash_error_activity_close_app">アプリを終了</string>
     <string name="customactivityoncrash_error_activity_error_details">エラーの詳細</string>
     <string name="customactivityoncrash_error_activity_error_details_title">エラーの詳細</string>
@@ -464,8 +462,6 @@
     <string name="youtube_subtitle_language">YouTube字幕 翻訳言語</string>
     <string name="youtube_subtitle_language_message">言語コード (例 en) (2 文字) これは、YouTube の字幕に適する翻訳言語です。</string>
     <string name="use_anonymous">匿名で貢献する</string>
-    <string name="contributor_name">貢献者名</string>
-    <string name="contributor_email">貢献者のメールアドレス</string>
     <string name="anonymous">匿名</string>
     <string name="simpmusic_lyrics">CocoMusic Lyrics</string>
     <string name="lyrics_provider_simpmusic">CocoMusic Lyricsが提供する歌詞</string>
