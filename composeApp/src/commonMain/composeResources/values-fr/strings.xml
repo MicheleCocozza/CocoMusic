@@ -128,7 +128,6 @@
     <string name="version">Version</string>
     <string name="github">GitHub</string>
     <string name="maxrave_dev">MicCoco78</string>
-    <string name="follow_me_on_x">Suivez-moi sur X</string>
     <string name="buy_me_a_coffee">Offrez-moi un café ! ☕</string>
     <string name="developer_blog">Blog des développeurs</string>
     <string name="developer_blog_tagline">Lisez les notes des développeurs, les tutoriels &amp; les coulisses du projet</string>
@@ -217,8 +216,6 @@
     <string name="skip_sponsor_part_of_video">Ignorer la partie sponsorisée de la vidéo</string>
     <string name="customactivityoncrash_error_activity_error_occurred_explanation">Une erreur inattendue s'est produite. Veuillez nous excuser pour ce désagrément.</string>
     <string name="customactivityoncrash_error_activity_restart_app">Redémarrer l'application</string>
-    <string name="help_build_lyrics_database">Aidez CocoMusic à enrichir sa base de données de paroles</string>
-    <string name="help_build_lyrics_database_description">Envoyez vos paroles enregistrées à la base de données de paroles de CocoMusic</string>
     <string name="customactivityoncrash_error_activity_close_app">Fermer l'application</string>
     <string name="customactivityoncrash_error_activity_error_details">Détails de l'erreur</string>
     <string name="customactivityoncrash_error_activity_error_details_title">Détails de l'erreur</string>
@@ -559,8 +556,6 @@
     <string name="preferred_audio_language_message">Certaines vidéos, principalement des podcasts, comportent plusieurs pistes audio dans différentes langues. Saisissez un code de langue (par exemple : vi) (2 lettres) pour lire cette piste lorsqu'elle est disponible. Laissez le champ vide pour toujours lire la piste audio d'origine.</string>
     <string name="original_audio">Audio original</string>
     <string name="use_anonymous">Utilisez un pseudonyme pour contribuer</string>
-    <string name="contributor_name">Nom du contributeur</string>
-    <string name="contributor_email">Email du contributeur</string>
     <string name="anonymous">Anonyme</string>
     <string name="simpmusic_lyrics">Paroles de CocoMusic</string>
     <string name="lyrics_provider_simpmusic">Paroles fournies par CocoMusic</string>
