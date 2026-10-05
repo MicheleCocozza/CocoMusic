@@ -207,8 +207,6 @@
     <string name="skip_sponsor_part_of_video">Omitir patrocinadores en el vídeo</string>
     <string name="customactivityoncrash_error_activity_error_occurred_explanation">Se ha producido un error inesperado. Disculpa las molestias.</string>
     <string name="customactivityoncrash_error_activity_restart_app">Reiniciar app</string>
-    <string name="help_build_lyrics_database">Ayuda a CocoMusic a contruir la base de datos de letras</string>
-    <string name="help_build_lyrics_database_description">Envía tus letras guardadas a la base de datos de letras de CocoMusic</string>
     <string name="customactivityoncrash_error_activity_close_app">Cerrar app</string>
     <string name="customactivityoncrash_error_activity_error_details">Detalles del error</string>
     <string name="customactivityoncrash_error_activity_error_details_title">Detalles del error</string>
@@ -521,8 +519,6 @@
     <string name="youtube_subtitle_language">Idioma de traducción de subtítulos de YouTube</string>
     <string name="youtube_subtitle_language_message">Escribe el código de idioma (ej.: es) (2 letras). Este es el idioma de traducción preferido para los subtítulos de YouTube.</string>
     <string name="use_anonymous">Usa un nombre anónimo para contribuir</string>
-    <string name="contributor_name">Nombre del contribuidor</string>
-    <string name="contributor_email">Correo del contribuidor</string>
     <string name="anonymous">Anónimo</string>
     <string name="simpmusic_lyrics">CocoMusic Lyrics</string>
     <string name="lyrics_provider_simpmusic">Letras proporcionadas por CocoMusic Lyrics</string>
