@@ -207,8 +207,6 @@
     <string name="skip_sponsor_part_of_video">ข้ามส่วนผู้สนับสนุนของวิดีโอ</string>
     <string name="customactivityoncrash_error_activity_error_occurred_explanation">เกิดข้อผิดพลาดที่ไม่คาดคิด ขออภัยในความไม่สะดวก</string>
     <string name="customactivityoncrash_error_activity_restart_app">รีสตาร์ทแอป</string>
-    <string name="help_build_lyrics_database">มีส่วนร่วมในการสร้างฐานข้อมูลเนื้อเพลงกับ CocoMusic Lyrics</string>
-    <string name="help_build_lyrics_database_description">อัปโหลดเนื้อเพลงที่คุณบันทึกไว้ไปยังฐานข้อมูล CocoMusic Lyrics</string>
     <string name="customactivityoncrash_error_activity_close_app">ปิดแอป</string>
     <string name="customactivityoncrash_error_activity_error_details">รายละเอียดข้อผิดพลาด</string>
     <string name="customactivityoncrash_error_activity_error_details_title">รายละเอียดข้อผิดพลาด</string>
@@ -484,8 +482,6 @@
     <string name="youtube_subtitle_language">ภาษาการแปลคำบรรยายบน YouTube</string>
     <string name="youtube_subtitle_language_message">พิมพ์รหัสภาษาประเภท (เช่น: en) (2 ตัวอักษร) นี่คือภาษาที่ต้องการใช้แปลคำบรรยาย YouTube</string>
     <string name="use_anonymous">มีส่วนร่วมโดยใช้ชื่อไม่ระบุตัวตน</string>
-    <string name="contributor_name">ชื่อผู้มีส่วนร่วม</string>
-    <string name="contributor_email">อีเมลผู้ร่วมสนับสนุน</string>
     <string name="anonymous">ไม่ระบุชื่อ</string>
     <string name="simpmusic_lyrics">CocoMusic Lyrics</string>
     <string name="lyrics_provider_simpmusic">เนื้อเพลงจัดทำโดย CocoMusic Lyrics</string>
