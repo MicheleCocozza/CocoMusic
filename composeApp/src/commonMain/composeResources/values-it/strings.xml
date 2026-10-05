@@ -210,8 +210,6 @@
     <string name="skip_sponsor_part_of_video">Salta la parte dello sponsor del video</string>
     <string name="customactivityoncrash_error_activity_error_occurred_explanation">Si è verificato un errore imprevisto. Ci dispiace per l'inconvenienza.</string>
     <string name="customactivityoncrash_error_activity_restart_app">Riavvia l'applicazione</string>
-    <string name="help_build_lyrics_database">Aiuta CocoMusic a costruire il database dei testi</string>
-    <string name="help_build_lyrics_database_description">Invia i tuoi testi salvati al database dei testi di CocoMusic</string>
     <string name="customactivityoncrash_error_activity_close_app">Chiudi l'applicazione</string>
     <string name="customactivityoncrash_error_activity_error_details">Dettagli errore</string>
     <string name="customactivityoncrash_error_activity_error_details_title">Dettagli errore</string>
@@ -529,8 +527,6 @@
     <string name="youtube_subtitle_language">Lingua di traduzione dei sottotitoli di YouTube</string>
     <string name="youtube_subtitle_language_message">Codice lingua tipo (Es: it) (2 lettere). Questa è la lingua preferita per i sottotitoli di YouTube.</string>
     <string name="use_anonymous">Usa nome anonimo per contribuire</string>
-    <string name="contributor_name">Nome del collaboratore</string>
-    <string name="contributor_email">E-mail del collaboratore</string>
     <string name="anonymous">Anonimo</string>
     <string name="CocoMusic_lyrics">Testi di CocoMusic</string>
     <string name="lyrics_provider_CocoMusic">Testi forniti da CocoMusic Lyrics</string>
